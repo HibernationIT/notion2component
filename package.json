@@ -1,8 +1,23 @@
 {
-  "name": "notion2component",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
+  "name": "@hibernationit/notion2component",
+  "version": "0.0.1",
+  "description": "You can render the contents of the Notion Page in react using the @notionhq/client",
+  "keywords": [
+    "react",
+    "reactjs",
+    "notion"
+  ],
+  "author": "hbnation.it@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HibernationIT/notion2component.git"
+  },
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "browser": "./browser/specific/main.js",
+  "devDependencies": {
+    "@notionhq/client": "^2.2.13",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -10,6 +25,17 @@
     "@types/node": "^16.18.57",
     "@types/react": "^18.2.25",
     "@types/react-dom": "^18.2.10",
+    "eslint": "8.50.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-next": "13.5.2",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -19,8 +45,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "jest",
+    "eject": "react-scripts eject",
+    "prepare": "rm -rf dist && mkdir dist && tsc"
   },
   "eslintConfig": {
     "extends": [
