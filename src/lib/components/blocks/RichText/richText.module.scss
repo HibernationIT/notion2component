@@ -1,8 +1,7 @@
 .richTexts {
+  display: inline;
   max-width: 100%;
   width: 100%;
-  white-space: pre-wrap;
-  word-break: break-word;
   caret-color: rgb(55, 53, 47);
   text-align: left;
 
@@ -23,7 +22,7 @@
 
 .richText {
   line-height: 1.5;
-  white-space: pre-wrap;
+  white-space: pre;
 }
 
 .bold {
