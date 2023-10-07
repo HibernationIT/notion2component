@@ -1,0 +1,31 @@
+.richTexts {
+  code {
+    padding: 2px 4px;
+    font-family: monospace;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #F4F5FB;
+    color: #CE613E;
+  }
+}
+
+.richText {
+  line-height: 24px;
+  white-space: pre-wrap;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  border-bottom: 1px solid black;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
