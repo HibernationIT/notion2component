@@ -74,7 +74,7 @@ export interface DefaultBlock {
   last_edited_by: object
   has_children: boolean
   archived: boolean
-  children: Block[]
+  children?: Block[]
 }
 
 export interface Bookmark extends DefaultBlock {
@@ -82,6 +82,10 @@ export interface Bookmark extends DefaultBlock {
   bookmark: {
     caption: RichText[]
     url: string
+    icon: string | undefined
+    title: string | undefined
+    image: string | undefined
+    description: string | undefined
   }
 }
 
