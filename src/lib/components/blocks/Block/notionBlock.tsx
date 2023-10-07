@@ -1,5 +1,6 @@
-import { Block, Bookmark } from 'lib/types/blockType'
+import { Block, Bookmark, BulletedListItem } from 'lib/types/blockType'
 import BookmarkBlock from 'lib/components/blocks/Bookmark/bookmarkBlock'
+import BulletedListItemBlock from 'lib/components/blocks/BulletedListItem/bulletedListItemBlock'
 import styles from './notionBlock.module.scss'
 
 interface IProps {
@@ -13,6 +14,10 @@ export default function NotionBlock({ block, numbered }: IProps) {
       case 'bookmark': {
         const bookmark = block as Bookmark
         return <BookmarkBlock block={bookmark} />
+      }
+      case 'bulleted_list_item': {
+        const bulletedListItem = block as BulletedListItem
+        return <BulletedListItemBlock block={bulletedListItem} />
       }
       default:
         return <div />

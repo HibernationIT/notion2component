@@ -1,6 +1,6 @@
-import styles from './richText.module.scss'
 import { RichText as Type } from 'lib/types/blockType'
 import RichText from './richText'
+import styles from './richText.module.scss'
 
 interface IProps {
   richTexts: Type[]
@@ -22,5 +22,5 @@ export default function RichTexts({ richTexts }: IProps) {
     }
   }
 
-  return <span className={styles.richTexts}>{array}</span>
+  return <div className={styles.richTexts}>{array}</div>
 }
