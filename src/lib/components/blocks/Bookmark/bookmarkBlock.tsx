@@ -1,4 +1,4 @@
-import { Bookmark } from 'lib/type/blockType'
+import { Bookmark } from 'lib/types/blockType'
 import styles from './bookmarkBlock.module.scss'
 
 export default function BookmarkBlock({ block }: { block: Bookmark }) {

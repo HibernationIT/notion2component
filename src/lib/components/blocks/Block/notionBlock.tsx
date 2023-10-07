@@ -1,4 +1,4 @@
-import { Block, Bookmark } from 'lib/type/blockType'
+import { Block, Bookmark } from 'lib/types/blockType'
 import BookmarkBlock from 'lib/components/blocks/Bookmark/bookmarkBlock'
 import styles from './notionBlock.module.scss'
 

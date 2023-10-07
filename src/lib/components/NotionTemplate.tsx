@@ -1,5 +1,5 @@
 import NotionBlock from 'lib/components/blocks/Block/notionBlock'
-import { Block } from 'lib/type/blockType'
+import { Block } from 'lib/types/blockType'
 import styles from './NotionTemplate.module.scss'
 
 export default function NotionTemplate({ blocks }: { blocks: Block[] }) {
