@@ -9,9 +9,11 @@ export default function BulletedListItemBlock({
   block: BulletedListItem
 }) {
   return (
-    <ul className={`${styles.list}`}>
+    <ul className={styles.list}>
       <li>
-        <RichTexts richTexts={block.bulleted_list_item.rich_text} />
+        <div className={styles.content}>
+          <RichTexts richTexts={block.bulleted_list_item.rich_text} />
+        </div>
         {block.children &&
           block.children.map((b, idx) => <NotionBlock key={idx} block={b} />)}
       </li>

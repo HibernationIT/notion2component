@@ -11,4 +11,5 @@ export default function IconBlock({ icon }: IPorps) {
   if (icon.type === 'emoji') return <EmojiBlock emoji={icon} />
   if (icon.type === 'external') return <ExternalBlock external={icon} />
   if (icon.type === 'file') return <FileBlock file={icon} />
+  return <div />
 }

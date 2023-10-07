@@ -1,7 +1,19 @@
 .emoji {
-  width: 20px;
-  height: 20px;
+  width: 24px;
 
-  font-size: 20px;
+  font-size: 16.8px;
   line-height: 20px;
+  & > div {
+    display: flex;
+    width: 24px;
+    height: 24px;
+
+    align-items: center;
+    justify-content: center;
+
+    & > div {
+      width: 16.8px;
+      height: 16.8px;
+    }
+  }
 }

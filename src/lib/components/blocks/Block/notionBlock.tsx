@@ -2,12 +2,14 @@ import {
   Block,
   Bookmark,
   BulletedListItem,
+  Callout,
   Paragraph,
 } from 'lib/types/blockType'
 import BookmarkBlock from 'lib/components/blocks/Bookmark/bookmarkBlock'
 import BulletedListItemBlock from 'lib/components/blocks/BulletedListItem/bulletedListItemBlock'
 import styles from './notionBlock.module.scss'
 import ParagraphBlock from '../Paragraph/paragraphBlock'
+import CalloutBlock from '../Callout/CalloutBlock'
 
 interface IProps {
   block: Block
@@ -24,6 +26,10 @@ export default function NotionBlock({ block, numbered }: IProps) {
       case 'bulleted_list_item': {
         const bulletedListItem = block as BulletedListItem
         return <BulletedListItemBlock block={bulletedListItem} />
+      }
+      case 'callout': {
+        const callout = block as Callout
+        return <CalloutBlock block={callout} />
       }
       case 'paragraph': {
         const paragraph = block as Paragraph

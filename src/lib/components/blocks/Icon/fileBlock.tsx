@@ -8,7 +8,9 @@ interface IProps {
 export default function FileBlock({ file }: IProps) {
   return (
     <div className={styles.file}>
-      <img src={file.file.url} alt="icon" />
+      <div>
+        <img src={file.file.url} alt="icon" />
+      </div>
     </div>
   )
 }

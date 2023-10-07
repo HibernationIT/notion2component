@@ -1,11 +1,13 @@
 .external {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
 
-  img {
-    width: 100%;
-    height: 100%;
+  div {
+    img {
+      width: 23.04px;
+      height: 23.04px;
 
-    object-fit: cover;
+      object-fit: cover;
+    }
   }
 }

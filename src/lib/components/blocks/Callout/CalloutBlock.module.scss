@@ -1,0 +1,12 @@
+.callout {
+  display: flex;
+  width: 100%;
+  border-radius: 3px;
+  padding: 16px 16px 16px 12px;
+  box-sizing: border-box;
+
+  .content {
+    margin-left: 8px;
+    width: 100%;
+  }
+}

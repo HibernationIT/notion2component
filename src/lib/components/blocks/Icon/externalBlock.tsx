@@ -8,7 +8,9 @@ interface IProps {
 export default function ExternalBlock({ external }: IProps) {
   return (
     <div className={styles.external}>
-      <img src={external.external.url} alt="icon" />
+      <div>
+        <img src={external.external.url} alt="icon" />
+      </div>
     </div>
   )
 }

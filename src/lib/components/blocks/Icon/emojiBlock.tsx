@@ -6,5 +6,13 @@ interface IProps {
 }
 
 export default function EmojiBlock({ emoji }: IProps) {
-  return <div className={styles.emoji}>{emoji.emoji}</div>
+  return (
+    <div className={styles.emoji}>
+      <div>
+        <div>
+          <span>{emoji.emoji}</span>
+        </div>
+      </div>
+    </div>
+  )
 }
