@@ -37,7 +37,9 @@ export default function HeaderBlock({ block }: IProps) {
             </svg>
           </button>
         )}
-        <RichTexts richTexts={header.rich_text} />
+        <div className={styles.content}>
+          <RichTexts richTexts={header.rich_text} />
+        </div>
       </>
     )
   }

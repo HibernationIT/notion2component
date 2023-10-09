@@ -2,6 +2,10 @@
   overflow: hidden;
   margin-bottom: 4px;
 
+  .content {
+    padding: 0 2px;
+  }
+
   & > h2, h3, h4 {
     display: flex;
     align-items: center;
@@ -24,7 +28,7 @@
     height: auto;
 
     & .button > svg {
-      transform: rotate(90deg);
+      transform: rotate(180deg);
     }
   }
 
@@ -60,7 +64,9 @@
   align-items: center;
   justify-content: center;
 
-  width: 24px;
+  margin-right: 2px;
+
+  width: 22px;
   height: 24px;
   border-radius: 3px;
   transition: background 20ms ease-in 0s;
@@ -74,7 +80,7 @@
     display: block;
     flex-shrink: 0;
     transition: transform 200ms ease-out 0s;
-    transform: rotateZ(180deg);
+    transform: rotateZ(90deg);
     opacity: 1;
   }
 }
