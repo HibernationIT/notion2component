@@ -54,7 +54,7 @@ export default function HeaderBlock({ block }: IProps) {
         <h4 className={NotionColor(header.color)}>{content()}</h4>
       )}
       {block.children && (
-        <div>
+        <div className={styles.children}>
           {block.children &&
             block.children.map((child, idx) => (
               <NotionBlock key={idx} block={child} />

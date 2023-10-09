@@ -16,6 +16,7 @@ import {
   Paragraph,
   Quote,
   Table,
+  ToDo,
 } from 'lib/types/blockType'
 import BookmarkBlock from 'lib/components/blocks/Bookmark/bookmarkBlock'
 import BulletedListItemBlock from 'lib/components/blocks/BulletedListItem/bulletedListItemBlock'
@@ -32,6 +33,7 @@ import ImageBlock from 'lib/components/blocks/Image/imageBlock'
 import NumberedListItemBlock from 'lib/components/blocks/NumberedListItem/numberedListItemBlock'
 import QuoteBlock from 'lib/components/blocks/Quote/quoteBlock'
 import TableBlock from 'lib/components/blocks/Table/tableBlock'
+import TodoBlock from 'lib/components/blocks/Todo/todoBlock'
 import styles from './notionBlock.module.scss'
 
 interface IProps {
@@ -106,6 +108,10 @@ export default function NotionBlock({ block, numbered }: IProps) {
       case 'table': {
         const table = block as Table
         return <TableBlock block={table} />
+      }
+      case 'to_do': {
+        const toDo = block as ToDo
+        return <TodoBlock block={toDo} />
       }
       case 'paragraph': {
         const paragraph = block as Paragraph
