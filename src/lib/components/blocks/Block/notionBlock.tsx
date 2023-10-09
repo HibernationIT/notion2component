@@ -14,6 +14,7 @@ import {
   Image,
   NumberedListItem,
   Paragraph,
+  Quote,
 } from 'lib/types/blockType'
 import BookmarkBlock from 'lib/components/blocks/Bookmark/bookmarkBlock'
 import BulletedListItemBlock from 'lib/components/blocks/BulletedListItem/bulletedListItemBlock'
@@ -28,6 +29,7 @@ import FileBlock from 'lib/components/blocks/File/fileBlock'
 import HeaderBlock from 'lib/components/blocks/Header/headerBlock'
 import ImageBlock from 'lib/components/blocks/Image/imageBlock'
 import NumberedListItemBlock from 'lib/components/blocks/NumberedListItem/numberedListItemBlock'
+import QuoteBlock from 'lib/components/blocks/Quote/quoteBlock'
 import styles from './notionBlock.module.scss'
 
 interface IProps {
@@ -94,6 +96,10 @@ export default function NotionBlock({ block, numbered }: IProps) {
         return (
           <NumberedListItemBlock block={numberedListItem} number={numbered} />
         )
+      }
+      case 'quote': {
+        const quote = block as Quote
+        return <QuoteBlock block={quote} />
       }
       case 'paragraph': {
         const paragraph = block as Paragraph
