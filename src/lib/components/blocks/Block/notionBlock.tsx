@@ -6,6 +6,8 @@ import {
   Code,
   Column,
   ColumnList,
+  Divider,
+  Equation,
   Paragraph,
 } from 'lib/types/blockType'
 import BookmarkBlock from 'lib/components/blocks/Bookmark/bookmarkBlock'
@@ -15,6 +17,8 @@ import CalloutBlock from 'lib/components/blocks/Callout/calloutBlock'
 import CodeBlock from 'lib/components/blocks/Code/codeBlock'
 import ColumnBlock from 'lib/components/blocks/Column/columnBlock'
 import ColumnListBlock from 'lib/components/blocks/ColumnList/columnListBlock'
+import DividerBlock from 'lib/components/blocks/Divider/dividerBlock'
+import EquationBlock from 'lib/components/blocks/Equation/equationBlock'
 import styles from './notionBlock.module.scss'
 
 interface IProps {
@@ -48,6 +52,13 @@ export default function NotionBlock({ block, numbered }: IProps) {
       case 'column_list': {
         const columnList = block as ColumnList
         return <ColumnListBlock block={columnList} />
+      }
+      case 'divider': {
+        return <DividerBlock />
+      }
+      case 'equation': {
+        const equation = block as Equation
+        return <EquationBlock block={equation} />
       }
       case 'paragraph': {
         const paragraph = block as Paragraph
