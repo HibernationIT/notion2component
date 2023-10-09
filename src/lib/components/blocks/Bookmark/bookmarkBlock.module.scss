@@ -11,15 +11,11 @@
   overflow: hidden;
   text-decoration: none;
   color: #333333;
-
-  &:hover {
-    background-color: rgba(55, 53, 47, 0.08);
-  }
 }
 
 @media (hover:hover) and (pointer:fine)  {
   .bookmark:hover {
-    background-color: #EEEEEE;
+    background-color: rgba(55, 53, 47, 0.08);
   }
 }
 

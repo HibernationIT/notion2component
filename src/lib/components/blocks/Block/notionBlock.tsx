@@ -6,8 +6,8 @@ import {
   Code,
   Column,
   ColumnList,
-  Divider,
   Equation,
+  FileBlock as File,
   Paragraph,
 } from 'lib/types/blockType'
 import BookmarkBlock from 'lib/components/blocks/Bookmark/bookmarkBlock'
@@ -19,6 +19,7 @@ import ColumnBlock from 'lib/components/blocks/Column/columnBlock'
 import ColumnListBlock from 'lib/components/blocks/ColumnList/columnListBlock'
 import DividerBlock from 'lib/components/blocks/Divider/dividerBlock'
 import EquationBlock from 'lib/components/blocks/Equation/equationBlock'
+import FileBlock from 'lib/components/blocks/File/fileBlock'
 import styles from './notionBlock.module.scss'
 
 interface IProps {
@@ -59,6 +60,10 @@ export default function NotionBlock({ block, numbered }: IProps) {
       case 'equation': {
         const equation = block as Equation
         return <EquationBlock block={equation} />
+      }
+      case 'file': {
+        const file = block as File
+        return <FileBlock block={file} />
       }
       case 'paragraph': {
         const paragraph = block as Paragraph
