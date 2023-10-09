@@ -11,6 +11,7 @@ import {
   Header1,
   Header2,
   Header3,
+  Image,
   Paragraph,
 } from 'lib/types/blockType'
 import BookmarkBlock from 'lib/components/blocks/Bookmark/bookmarkBlock'
@@ -24,6 +25,7 @@ import DividerBlock from 'lib/components/blocks/Divider/dividerBlock'
 import EquationBlock from 'lib/components/blocks/Equation/equationBlock'
 import FileBlock from 'lib/components/blocks/File/fileBlock'
 import HeaderBlock from 'lib/components/blocks/Header/headerBlock'
+import ImageBlock from 'lib/components/blocks/Image/imageBlock'
 import styles from './notionBlock.module.scss'
 
 interface IProps {
@@ -80,6 +82,10 @@ export default function NotionBlock({ block, numbered }: IProps) {
       case 'heading_3': {
         const heading = block as Header3
         return <HeaderBlock block={heading} />
+      }
+      case 'image': {
+        const image = block as Image
+        return <ImageBlock block={image} />
       }
       case 'paragraph': {
         const paragraph = block as Paragraph
