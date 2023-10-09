@@ -5,7 +5,7 @@ import styles from './paragraphBlock.module.scss'
 
 export default function ParagraphBlock({ block }: { block: Paragraph }) {
   return (
-    <>
+    <div className={styles.paragraph}>
       <RichTexts richTexts={block.paragraph.rich_text} />
       {block.children && (
         <div className={styles.children}>
@@ -14,6 +14,6 @@ export default function ParagraphBlock({ block }: { block: Paragraph }) {
           ))}
         </div>
       )}
-    </>
+    </div>
   )
 }

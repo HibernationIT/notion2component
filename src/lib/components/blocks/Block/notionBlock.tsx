@@ -4,14 +4,18 @@ import {
   BulletedListItem,
   Callout,
   Code,
+  Column,
+  ColumnList,
   Paragraph,
 } from 'lib/types/blockType'
 import BookmarkBlock from 'lib/components/blocks/Bookmark/bookmarkBlock'
 import BulletedListItemBlock from 'lib/components/blocks/BulletedListItem/bulletedListItemBlock'
+import ParagraphBlock from 'lib/components/blocks/Paragraph/paragraphBlock'
+import CalloutBlock from 'lib/components/blocks/Callout/calloutBlock'
+import CodeBlock from 'lib/components/blocks/Code/codeBlock'
+import ColumnBlock from 'lib/components/blocks/Column/columnBlock'
+import ColumnListBlock from 'lib/components/blocks/ColumnList/columnListBlock'
 import styles from './notionBlock.module.scss'
-import ParagraphBlock from '../Paragraph/paragraphBlock'
-import CalloutBlock from '../Callout/calloutBlock'
-import CodeBlock from '../Code/codeBlock'
 
 interface IProps {
   block: Block
@@ -36,6 +40,14 @@ export default function NotionBlock({ block, numbered }: IProps) {
       case 'code': {
         const code = block as Code
         return <CodeBlock block={code} />
+      }
+      case 'column': {
+        const column = block as Column
+        return <ColumnBlock block={column} />
+      }
+      case 'column_list': {
+        const columnList = block as ColumnList
+        return <ColumnListBlock block={columnList} />
       }
       case 'paragraph': {
         const paragraph = block as Paragraph
