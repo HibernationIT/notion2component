@@ -8,6 +8,9 @@ import {
   ColumnList,
   Equation,
   FileBlock as File,
+  Header1,
+  Header2,
+  Header3,
   Paragraph,
 } from 'lib/types/blockType'
 import BookmarkBlock from 'lib/components/blocks/Bookmark/bookmarkBlock'
@@ -20,6 +23,7 @@ import ColumnListBlock from 'lib/components/blocks/ColumnList/columnListBlock'
 import DividerBlock from 'lib/components/blocks/Divider/dividerBlock'
 import EquationBlock from 'lib/components/blocks/Equation/equationBlock'
 import FileBlock from 'lib/components/blocks/File/fileBlock'
+import HeaderBlock from 'lib/components/blocks/Header/headerBlock'
 import styles from './notionBlock.module.scss'
 
 interface IProps {
@@ -64,6 +68,18 @@ export default function NotionBlock({ block, numbered }: IProps) {
       case 'file': {
         const file = block as File
         return <FileBlock block={file} />
+      }
+      case 'heading_1': {
+        const heading = block as Header1
+        return <HeaderBlock block={heading} />
+      }
+      case 'heading_2': {
+        const heading = block as Header2
+        return <HeaderBlock block={heading} />
+      }
+      case 'heading_3': {
+        const heading = block as Header3
+        return <HeaderBlock block={heading} />
       }
       case 'paragraph': {
         const paragraph = block as Paragraph
