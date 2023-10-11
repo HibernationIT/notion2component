@@ -2,7 +2,7 @@ import { Client } from '@notionhq/client'
 import parse from 'node-html-parser'
 import { Block } from './types/blockType'
 
-export default class Notion2Component {
+export class Notion2Component {
   private client
 
   constructor({ client }: { client: Client }) {
