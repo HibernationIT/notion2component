@@ -1,5 +1,5 @@
-import { Column, ColumnList } from 'lib/types/blockType'
-import ColumnBlock from 'lib/components/blocks/Column/columnBlock'
+import { Column, ColumnList } from '../../../types/blockType'
+import ColumnBlock from '../Column/columnBlock'
 import styles from './columnListBlock.module.scss'
 
 export default function ColumnListBlock({ block }: { block: ColumnList }) {

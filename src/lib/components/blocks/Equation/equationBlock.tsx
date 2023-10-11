@@ -1,5 +1,5 @@
 import { MathJax, MathJaxContext } from 'better-react-mathjax'
-import { Equation } from 'lib/types/blockType'
+import { Equation } from '../../../types/blockType'
 import styles from './equationBlock.module.scss'
 
 export default function EquationBlock({ block }: { block: Equation }) {

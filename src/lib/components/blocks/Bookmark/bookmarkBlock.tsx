@@ -1,4 +1,4 @@
-import { Bookmark } from 'lib/types/blockType'
+import { Bookmark } from '../../../types/blockType'
 import styles from './bookmarkBlock.module.scss'
 import CaptionBlock from '../Caption/captionBlock'
 

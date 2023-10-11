@@ -1,4 +1,4 @@
-import { External } from 'lib/types/blockType'
+import { External } from '../../../types/blockType'
 import styles from './externalBlock.module.scss'
 
 interface IProps {

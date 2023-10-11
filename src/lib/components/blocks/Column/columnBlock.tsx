@@ -1,5 +1,5 @@
-import NotionBlock from 'lib/components/blocks/Block/notionBlock'
-import { Column } from 'lib/types/blockType'
+import NotionBlock from '../Block/notionBlock'
+import { Column } from '../../../types/blockType'
 import styles from './columnBlock.module.scss'
 
 export default function ColumnBlock({ block }: { block: Column }) {

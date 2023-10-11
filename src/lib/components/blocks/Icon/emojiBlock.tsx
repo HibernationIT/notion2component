@@ -1,4 +1,4 @@
-import { Emoji } from 'lib/types/blockType'
+import { Emoji } from '../../../types/blockType'
 import styles from './emojiBlock.module.scss'
 
 interface IProps {

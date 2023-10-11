@@ -1,6 +1,6 @@
-import { NumberedListItem } from 'lib/types/blockType'
-import RichTexts from 'lib/components/blocks/RichText/richTexts'
-import NotionBlock from 'lib/components/blocks/Block/notionBlock'
+import RichTexts from '../RichText/richTexts'
+import NotionBlock from '../Block/notionBlock'
+import { NumberedListItem } from '../../../types/blockType'
 import styles from './numberedListItemBlock.module.scss'
 
 interface IProps {

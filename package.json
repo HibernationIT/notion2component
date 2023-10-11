@@ -50,9 +50,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest",
     "eject": "react-scripts eject",
-    "prepare": "rm -rf dist && mkdir dist && tsc"
+    "prepare": "rm -rf dist && mkdir dist && babel src/lib --out-dir dist --copy-files"
   },
   "eslintConfig": {
     "extends": [

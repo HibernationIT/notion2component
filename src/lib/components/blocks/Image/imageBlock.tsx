@@ -1,4 +1,4 @@
-import { Image } from 'lib/types/blockType'
+import { Image } from '../../../types/blockType'
 import styles from './imageBlock.module.scss'
 
 export default function ImageBlock({ block }: { block: Image }) {

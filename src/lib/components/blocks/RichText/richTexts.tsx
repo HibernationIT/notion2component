@@ -1,4 +1,4 @@
-import { RichText as Type } from 'lib/types/blockType'
+import { RichText as Type } from '../../../types/blockType'
 import RichText from './richText'
 import styles from './richText.module.scss'
 

@@ -1,4 +1,4 @@
-import { FileBlock as File } from 'lib/types/blockType'
+import { FileBlock as File } from '../../../types/blockType'
 import styles from './fileBlock.module.scss'
 
 export default function FileBlock({ block }: { block: File }) {

@@ -1,6 +1,6 @@
-import { ToDo } from 'lib/types/blockType'
-import RichTexts from 'lib/components/blocks/RichText/richTexts'
-import NotionBlock from 'lib/components/blocks/Block/notionBlock'
+import { ToDo } from '../../../types/blockType'
+import RichTexts from '../RichText/richTexts'
+import NotionBlock from '../Block/notionBlock'
 import styles from './todoBlock.module.scss'
 
 export default function TodoBlock({ block }: { block: ToDo }) {

@@ -1,6 +1,6 @@
-import RichTexts from 'lib/components/blocks/RichText/richTexts'
-import { Paragraph } from 'lib/types/blockType'
-import NotionBlock from 'lib/components/blocks/Block/notionBlock'
+import { Paragraph } from '../../../types/blockType'
+import RichTexts from '../RichText/richTexts'
+import NotionBlock from '../Block/notionBlock'
 import styles from './paragraphBlock.module.scss'
 
 export default function ParagraphBlock({ block }: { block: Paragraph }) {

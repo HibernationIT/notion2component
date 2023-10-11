@@ -1,6 +1,6 @@
-import { Callout } from 'lib/types/blockType'
-import IconBlock from 'lib/components/blocks/Icon/iconBlock'
-import RichTexts from 'lib/components/blocks/RichText/richTexts'
+import { Callout } from '../../../types/blockType'
+import IconBlock from '../Icon/iconBlock'
+import RichTexts from '../RichText/richTexts'
 import CalloutColor from './calloutColor'
 import styles from './calloutBlock.module.scss'
 

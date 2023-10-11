@@ -1,5 +1,5 @@
-import { RichText as Type } from 'lib/types/blockType'
-import NotionColor from 'lib/components/blocks/notionColor'
+import { RichText as Type } from '../../../types/blockType'
+import NotionColor from '../notionColor'
 import styles from './richText.module.scss'
 
 export default function RichText({ richText }: { richText: Type }) {

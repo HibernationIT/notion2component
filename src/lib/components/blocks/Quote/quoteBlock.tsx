@@ -1,6 +1,6 @@
-import { Quote } from 'lib/types/blockType'
-import NotionColor from 'lib/components/blocks/notionColor'
-import RichTexts from 'lib/components/blocks/RichText/richTexts'
+import { Quote } from '../../../types/blockType'
+import NotionColor from '../notionColor'
+import RichTexts from '../RichText/richTexts'
 import styles from './quoteBlock.module.scss'
 
 export default function QuoteBlock({ block }: { block: Quote }) {

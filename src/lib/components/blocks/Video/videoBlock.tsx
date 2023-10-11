@@ -1,4 +1,4 @@
-import { Video } from 'lib/types/blockType'
+import { Video } from '../../../types/blockType'
 import styles from './videoBlock.module.scss'
 
 export default function VideoBlock({ block }: { block: Video }) {

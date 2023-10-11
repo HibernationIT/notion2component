@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { Header1, Header2, Header3 } from 'lib/types/blockType'
-import RichTexts from 'lib/components/blocks/RichText/richTexts'
-import NotionColor from 'lib/components/blocks/notionColor'
-import NotionBlock from 'lib/components/blocks/Block/notionBlock'
+import { Header1, Header2, Header3 } from '../../../types/blockType'
+import RichTexts from '../RichText/richTexts'
+import NotionColor from '../notionColor'
+import NotionBlock from '../Block/notionBlock'
 import styles from './headerBlock.module.scss'
 
 interface IProps {

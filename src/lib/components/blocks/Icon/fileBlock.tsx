@@ -1,4 +1,4 @@
-import { File } from 'lib/types/blockType'
+import { File } from '../../../types/blockType'
 import styles from './fileBlock.module.scss'
 
 interface IProps {

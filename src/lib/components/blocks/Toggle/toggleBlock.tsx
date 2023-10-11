@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Toggle } from 'lib/types/blockType'
-import RichTexts from 'lib/components/blocks/RichText/richTexts'
-import NotionBlock from 'lib/components/blocks/Block/notionBlock'
+import { Toggle } from '../../../types/blockType'
+import RichTexts from '../RichText/richTexts'
+import NotionBlock from '../Block/notionBlock'
 import styles from './toggleBlock.module.scss'
 
 export default function ToggleBlock({ block }: { block: Toggle }) {

@@ -1,6 +1,6 @@
 import Highlight from 'react-highlight'
-import { Code } from 'lib/types/blockType'
-import RichTexts from 'lib/components/blocks/RichText/richTexts'
+import { Code } from '../../../types/blockType'
+import RichTexts from '../RichText/richTexts'
 import CaptionBlock from '../Caption/captionBlock'
 import styles from './codeBlock.module.scss'
 import 'highlight.js/styles/github.css'

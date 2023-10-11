@@ -1,5 +1,5 @@
-import RichTexts from 'lib/components/blocks/RichText/richTexts'
-import { RichText } from 'lib/types/blockType'
+import RichTexts from '../RichText/richTexts'
+import { RichText } from '../../../types/blockType'
 import styles from './captionBlock.module.scss'
 
 export default function CaptionBlock({ caption }: { caption: RichText[] }) {

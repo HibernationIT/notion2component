@@ -1,5 +1,5 @@
-import { Table, TableRow } from 'lib/types/blockType'
-import RichTexts from 'lib/components/blocks/RichText/richTexts'
+import { Table, TableRow } from '../../../types/blockType'
+import RichTexts from '../RichText/richTexts'
 import styles from './tableBlock.module.scss'
 
 export default function TableBlock({ block }: { block: Table }) {
