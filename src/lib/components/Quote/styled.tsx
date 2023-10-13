@@ -1,4 +1,4 @@
-import styled from '@emotion/styled/macro'
+import styled from '@emotion/styled'
 import { NotionColor } from '../notionColor'
 
 export const Container = styled.div`

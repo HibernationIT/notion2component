@@ -38,7 +38,6 @@ import TableBlock from '../Table/tableBlock'
 import TodoBlock from '../Todo/todoBlock'
 import ToggleBlock from '../Toggle/toggleBlock'
 import VideoBlock from '../Video/videoBlock'
-import styles from './notionBlock.module.scss'
 import { Container } from './styled'
 
 interface IProps {
