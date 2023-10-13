@@ -1,17 +1,13 @@
 import { ToDo } from '../../types/blockType'
 import RichTexts from '../RichText/richTexts'
 import NotionBlock from '../Block/notionBlock'
-import styles from './todoBlock.module.scss'
+import { Container } from './styled'
 
 export default function TodoBlock({ block }: { block: ToDo }) {
   return (
-    <div className={styles.todo}>
-      <div
-        className={`${styles.box} ${
-          block.to_do.checked ? styles.checked : styles.notChecked
-        }`}
-      >
-        <div className={styles.checkbox}>
+    <Container>
+      <div className={`box ${block.to_do.checked ? 'checked' : 'notChecked'}`}>
+        <div className="checkbox">
           <div>
             {block.to_do.checked ? (
               <svg role="graphics-symbol" viewBox="0 0 14 14">
@@ -24,18 +20,18 @@ export default function TodoBlock({ block }: { block: ToDo }) {
             )}
           </div>
         </div>
-        <div className={styles.content}>
+        <div className="content">
           <RichTexts richTexts={block.to_do.rich_text} />
         </div>
       </div>
       {block.has_children && (
-        <div className={styles.children}>
+        <div className="children">
           {block.children &&
             block.children.map((child, idx) => (
               <NotionBlock key={idx} block={child} />
             ))}
         </div>
       )}
-    </div>
+    </Container>
   )
 }

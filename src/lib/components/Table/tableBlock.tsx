@@ -1,10 +1,10 @@
 import { Table, TableRow } from '../../types/blockType'
 import RichTexts from '../RichText/richTexts'
-import styles from './tableBlock.module.scss'
+import { Container } from './styled'
 
 export default function TableBlock({ block }: { block: Table }) {
   return (
-    <table className={styles.table}>
+    <Container>
       <tbody>
         {block.children &&
           block.children.map((child, idx) => {
@@ -20,6 +20,6 @@ export default function TableBlock({ block }: { block: Table }) {
             )
           })}
       </tbody>
-    </table>
+    </Container>
   )
 }

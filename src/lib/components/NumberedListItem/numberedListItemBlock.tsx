@@ -1,7 +1,7 @@
 import RichTexts from '../RichText/richTexts'
 import NotionBlock from '../Block/notionBlock'
 import { NumberedListItem } from '../../types/blockType'
-import styles from './numberedListItemBlock.module.scss'
+import { Container } from './styled'
 
 interface IProps {
   block: NumberedListItem
@@ -10,12 +10,16 @@ interface IProps {
 
 export default function NumberedListItemBlock({ block, number }: IProps) {
   return (
-    <ol className={styles.list} start={number || 1}>
-      <li>
-        <RichTexts richTexts={block.numbered_list_item.rich_text} />
-        {block.children &&
-          block.children.map((b, idx) => <NotionBlock key={idx} block={b} />)}
-      </li>
-    </ol>
+    <Container>
+      <ol className="list" start={number || 1}>
+        <li>
+          <div className="content">
+            <RichTexts richTexts={block.numbered_list_item.rich_text} />
+          </div>
+          {block.children &&
+            block.children.map((b, idx) => <NotionBlock key={idx} block={b} />)}
+        </li>
+      </ol>
+    </Container>
   )
 }

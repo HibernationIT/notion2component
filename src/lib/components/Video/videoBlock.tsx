@@ -1,16 +1,18 @@
 import { Video } from '../../types/blockType'
-import styles from './videoBlock.module.scss'
+import { Container } from './styled'
 
 export default function VideoBlock({ block }: { block: Video }) {
-  if (block.video.type === 'external') {
-    return (
-      <iframe
-        className={styles.video}
-        src={block.video.external.url.replace('watch?v=', 'embed/')}
-        title="YouTube video player"
-        allowFullScreen
-      />
-    )
-  }
-  return <video className={styles.video} src={block.video.file.url} controls />
+  return (
+    <Container>
+      {block.video.type === 'external' ? (
+        <iframe
+          src={block.video.external.url.replace('watch?v=', 'embed/')}
+          title="YouTube video player"
+          allowFullScreen
+        />
+      ) : (
+        <video src={block.video.file.url} controls />
+      )}
+    </Container>
+  )
 }
