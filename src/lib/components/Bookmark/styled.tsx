@@ -1,23 +1,21 @@
 import styled from '@emotion/styled/macro'
 
-export const Container = styled.div`
-  & > .bookmark {
-    display: flex;
-    flex-wrap: wrap;
+export const Container = styled.a`
+  display: flex;
+  flex-wrap: wrap;
 
-    width: 100%;
-    height: 108px;
+  width: 100%;
+  height: 108px;
 
-    background-color: #ffffff;
-    border: 1px solid rgba(55, 53, 47, 0.16);
-    border-radius: 3px;
-    overflow: hidden;
-    text-decoration: none;
-    color: #333333;
-  }
+  background-color: #ffffff;
+  border: 1px solid rgba(55, 53, 47, 0.16);
+  border-radius: 3px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #333333;
 
   @media (hover: hover) and (pointer: fine) {
-    & > .bookmark:hover {
+    &:hover {
       background-color: rgba(55, 53, 47, 0.08);
     }
   }

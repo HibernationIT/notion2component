@@ -1,5 +1,5 @@
-import styles from './dividerBlock.module.scss'
+import { Container } from './styled'
 
 export default function DividerBlock() {
-  return <div className={styles.divider} />
+  return <Container />
 }

@@ -4,8 +4,8 @@ import { Container } from './styled'
 
 export default function BookmarkBlock({ block }: { block: Bookmark }) {
   return (
-    <Container>
-      <a href={block.bookmark.url} className="bookmark" target="_blank">
+    <>
+      <Container href={block.bookmark.url} target="_blank">
         <div className="content">
           <p className="title">{block.bookmark.title}</p>
           <div className="description">
@@ -23,10 +23,10 @@ export default function BookmarkBlock({ block }: { block: Bookmark }) {
             <img src={block.bookmark.image} alt="image" />
           )}
         </div>
-      </a>
+      </Container>
       {block.bookmark.caption.length >= 1 && (
         <CaptionBlock caption={block.bookmark.caption} />
       )}
-    </Container>
+    </>
   )
 }
