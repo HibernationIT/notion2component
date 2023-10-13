@@ -1,4 +1,6 @@
-.file {
+import styled from '@emotion/styled/macro'
+
+export const Container = styled.a`
   display: flex;
   align-items: center;
 
@@ -24,10 +26,10 @@
     font-size: 16px;
     line-height: 20px;
   }
-}
 
-@media (hover:hover) and (pointer:fine)  {
-  .file:hover {
-    background-color: rgba(55, 53, 47, 0.08);
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: rgba(55, 53, 47, 0.08);
+    }
   }
-}
+`

@@ -1,4 +1,6 @@
-.emoji {
+import styled from '@emotion/styled/macro'
+
+export const Container = styled.div`
   width: 24px;
 
   font-size: 16.8px;
@@ -16,4 +18,4 @@
       height: 16.8px;
     }
   }
-}
+`

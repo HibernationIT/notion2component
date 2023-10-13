@@ -1,5 +1,5 @@
 import { External } from '../../types/blockType'
-import styles from './externalBlock.module.scss'
+import { Container } from './externalStyled'
 
 interface IProps {
   external: External
@@ -7,10 +7,10 @@ interface IProps {
 
 export default function ExternalBlock({ external }: IProps) {
   return (
-    <div className={styles.external}>
+    <Container>
       <div>
         <img src={external.external.url} alt="icon" />
       </div>
-    </div>
+    </Container>
   )
 }

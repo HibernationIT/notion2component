@@ -1,5 +1,5 @@
 import { Emoji } from '../../types/blockType'
-import styles from './emojiBlock.module.scss'
+import { Container } from './emotionStyled'
 
 interface IProps {
   emoji: Emoji
@@ -7,12 +7,12 @@ interface IProps {
 
 export default function EmojiBlock({ emoji }: IProps) {
   return (
-    <div className={styles.emoji}>
+    <Container>
       <div>
         <div>
           <span>{emoji.emoji}</span>
         </div>
       </div>
-    </div>
+    </Container>
   )
 }

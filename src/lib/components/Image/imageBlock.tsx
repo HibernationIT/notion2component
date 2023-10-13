@@ -1,5 +1,6 @@
 import { Image } from '../../types/blockType'
-import styles from './imageBlock.module.scss'
+import { Container } from './styled'
+import CaptionBlock from '../Caption/captionBlock'
 
 export default function ImageBlock({ block }: { block: Image }) {
   const url =
@@ -8,8 +9,13 @@ export default function ImageBlock({ block }: { block: Image }) {
       : block.image.external.url
 
   return (
-    <div className={styles.image}>
-      <img src={url} alt="image" />
-    </div>
+    <>
+      <Container>
+        <img src={url} alt="image" />
+      </Container>
+      {block.image.caption.length >= 1 && (
+        <CaptionBlock caption={block.image.caption} />
+      )}
+    </>
   )
 }

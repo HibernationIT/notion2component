@@ -40,8 +40,10 @@ export const Container = styled.div`
     }
   }
 
-  &:hover > .copyButton {
-    opacity: 100%;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover > .copyButton {
+      opacity: 100%;
+    }
   }
 
   & > .copyButton {
