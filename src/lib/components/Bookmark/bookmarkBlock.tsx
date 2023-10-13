@@ -1,10 +1,11 @@
 import { Bookmark } from '../../types/blockType'
 import styles from './bookmarkBlock.module.scss'
 import CaptionBlock from '../Caption/captionBlock'
+import { Container } from './styled'
 
 export default function BookmarkBlock({ block }: { block: Bookmark }) {
   return (
-    <>
+    <Container>
       <a href={block.bookmark.url} className={styles.bookmark} target="_blank">
         <div className={styles.content}>
           <p className={styles.title}>{block.bookmark.title}</p>
@@ -27,6 +28,6 @@ export default function BookmarkBlock({ block }: { block: Bookmark }) {
       {block.bookmark.caption.length >= 1 && (
         <CaptionBlock caption={block.bookmark.caption} />
       )}
-    </>
+    </Container>
   )
 }
