@@ -1,6 +1,6 @@
 {
   "name": "@hibernationit/notion2component",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "You can render the contents of the Notion Page in react using the @notionhq/client",
   "keywords": [
     "react",
