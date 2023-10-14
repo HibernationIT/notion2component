@@ -1,8 +1,8 @@
 import NotionBlock from '../components/Block/notionBlock'
-import { NotionBlock } from '../BlockType'
+import { NotionBlocks } from '../BlockType'
 import { Container } from './styled'
 
-export default function Index({ blocks }: { blocks: NotionBlock[] }) {
+export default function Index({ blocks }: { blocks: NotionBlocks[] }) {
   return (
     <Container>
       {blocks.map((block, idx) => {
