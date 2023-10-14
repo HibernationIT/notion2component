@@ -1,5 +1,5 @@
 import NotionBlock from '../components/Block/notionBlock'
-import { Block } from '../types/blockType'
+import { Block } from '../BlockType'
 import { Container } from './styled'
 
 export default function Index({ blocks }: { blocks: Block[] }) {

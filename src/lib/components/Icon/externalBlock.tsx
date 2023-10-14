@@ -1,4 +1,4 @@
-import { External } from '../../types/blockType'
+import { External } from '../../BlockType'
 import { Container } from './externalStyled'
 
 interface IProps {

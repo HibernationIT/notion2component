@@ -1,4 +1,4 @@
-import { Video } from '../../types/blockType'
+import { Video } from '../../BlockType'
 import { Container } from './styled'
 
 export default function VideoBlock({ block }: { block: Video }) {

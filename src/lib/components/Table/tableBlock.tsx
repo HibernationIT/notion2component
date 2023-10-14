@@ -1,4 +1,4 @@
-import { Table, TableRow } from '../../types/blockType'
+import { Table, TableRow } from '../../BlockType'
 import RichTexts from '../RichText/richTexts'
 import { Container } from './styled'
 

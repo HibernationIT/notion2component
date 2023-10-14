@@ -1,4 +1,4 @@
-import { Quote } from '../../types/blockType'
+import { Quote } from '../../BlockType'
 import RichTexts from '../RichText/richTexts'
 import { Container } from './styled'
 

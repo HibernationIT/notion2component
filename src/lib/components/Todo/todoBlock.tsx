@@ -1,4 +1,4 @@
-import { ToDo } from '../../types/blockType'
+import { ToDo } from '../../BlockType'
 import RichTexts from '../RichText/richTexts'
 import NotionBlock from '../Block/notionBlock'
 import { Container } from './styled'

@@ -1,6 +1,6 @@
 import RichTexts from '../RichText/richTexts'
 import NotionBlock from '../Block/notionBlock'
-import { NumberedListItem } from '../../types/blockType'
+import { NumberedListItem } from '../../BlockType'
 import { Container } from './styled'
 
 interface IProps {

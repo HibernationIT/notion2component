@@ -1,4 +1,4 @@
-import { Bookmark } from '../../types/blockType'
+import { Bookmark } from '../../BlockType'
 import CaptionBlock from '../Caption/captionBlock'
 import { Container } from './styled'
 

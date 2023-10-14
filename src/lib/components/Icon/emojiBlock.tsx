@@ -1,4 +1,4 @@
-import { Emoji } from '../../types/blockType'
+import { Emoji } from '../../BlockType'
 import { Container } from './emotionStyled'
 
 interface IProps {

@@ -1,4 +1,4 @@
-import { FileBlock as File } from '../../types/blockType'
+import { FileBlock as File } from '../../BlockType'
 import { Container } from './styled'
 import CaptionBlock from '../Caption/captionBlock'
 

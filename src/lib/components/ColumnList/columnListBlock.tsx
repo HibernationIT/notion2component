@@ -1,4 +1,4 @@
-import { Column, ColumnList } from '../../types/blockType'
+import { Column, ColumnList } from '../../BlockType'
 import ColumnBlock from '../Column/columnBlock'
 import { Container } from './styled'
 

@@ -1,4 +1,4 @@
-import { File } from '../../types/blockType'
+import { File } from '../../BlockType'
 import { Container } from './fileStyled'
 
 interface IProps {

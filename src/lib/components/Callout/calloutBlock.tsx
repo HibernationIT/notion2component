@@ -1,4 +1,4 @@
-import { Callout } from '../../types/blockType'
+import { Callout } from '../../BlockType'
 import IconBlock from '../Icon/iconBlock'
 import RichTexts from '../RichText/richTexts'
 import { Container } from './styled'

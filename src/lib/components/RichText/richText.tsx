@@ -1,4 +1,4 @@
-import { RichText as Type } from '../../types/blockType'
+import { RichText as Type } from '../../BlockType'
 import { Container } from './richTextStyled'
 
 export default function RichText({ richText }: { richText: Type }) {

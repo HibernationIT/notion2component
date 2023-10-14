@@ -19,7 +19,7 @@ import {
   ToDo,
   Toggle,
   Video,
-} from '../../types/blockType'
+} from '../../BlockType'
 import BookmarkBlock from '../Bookmark/bookmarkBlock'
 import BulletedListItemBlock from '../BulletedListItem/bulletedListItemBlock'
 import ParagraphBlock from '../Paragraph/paragraphBlock'

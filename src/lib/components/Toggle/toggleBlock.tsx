@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Toggle } from '../../types/blockType'
+import { Toggle } from '../../BlockType'
 import RichTexts from '../RichText/richTexts'
 import NotionBlock from '../Block/notionBlock'
 import { Container } from './styled'

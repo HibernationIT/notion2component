@@ -1,4 +1,4 @@
-import { Paragraph } from '../../types/blockType'
+import { Paragraph } from '../../BlockType'
 import RichTexts from '../RichText/richTexts'
 import NotionBlock from '../Block/notionBlock'
 import { Container } from './styled'

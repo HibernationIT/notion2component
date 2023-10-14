@@ -1,4 +1,4 @@
-import { Image } from '../../types/blockType'
+import { Image } from '../../BlockType'
 import { Container } from './styled'
 import CaptionBlock from '../Caption/captionBlock'
 

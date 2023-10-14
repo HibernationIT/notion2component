@@ -1,4 +1,4 @@
-import { Emoji, External, File } from '../../types/blockType'
+import { Emoji, External, File } from '../../BlockType'
 import EmojiBlock from './emojiBlock'
 import ExternalBlock from './externalBlock'
 import FileBlock from './fileBlock'

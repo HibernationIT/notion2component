@@ -1,5 +1,5 @@
 import NotionBlock from '../Block/notionBlock'
-import { Column } from '../../types/blockType'
+import { Column } from '../../BlockType'
 import { Container } from './styled'
 
 export default function ColumnBlock({ block }: { block: Column }) {

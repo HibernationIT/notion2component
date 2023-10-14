@@ -1,4 +1,4 @@
-import { BulletedListItem } from '../../types/blockType'
+import { BulletedListItem } from '../../BlockType'
 import RichTexts from '../RichText/richTexts'
 import NotionBlock from '../Block/notionBlock'
 import { Container } from './styled'

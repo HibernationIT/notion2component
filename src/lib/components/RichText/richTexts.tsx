@@ -1,4 +1,4 @@
-import { RichText as Type } from '../../types/blockType'
+import { RichText as Type } from '../../BlockType'
 import RichText from './richText'
 import { Container } from './richTextsStyled'
 
