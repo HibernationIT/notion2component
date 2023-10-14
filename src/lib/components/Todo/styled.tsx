@@ -8,7 +8,7 @@ export const Container = styled.div`
     align-items: center;
     width: 100%;
 
-    &.checkbox {
+    & > .checkbox {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -16,7 +16,7 @@ export const Container = styled.div`
       width: 24px;
       height: 30px;
     }
-    &.content {
+    & > .content {
       max-width: 100%;
       white-space: pre-wrap;
       word-break: break-word;
@@ -27,7 +27,7 @@ export const Container = styled.div`
     }
 
     &.checked {
-      .checkbox {
+      & > .checkbox {
         div {
           display: flex;
           align-items: center;
@@ -48,7 +48,7 @@ export const Container = styled.div`
     }
 
     &.notChecked {
-      .checkbox {
+      & > .checkbox {
         svg {
           width: 16px;
           height: 16px;

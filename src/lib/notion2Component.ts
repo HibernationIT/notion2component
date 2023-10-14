@@ -1,6 +1,6 @@
 import { Client } from '@notionhq/client'
 import parse from 'node-html-parser'
-import { Block } from './types/blockType'
+import { Block } from './BlockType'
 
 export class Notion2Component {
   private client
