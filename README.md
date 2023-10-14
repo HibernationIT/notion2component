@@ -94,3 +94,37 @@ export default function CsrComponent({data}) {
   return <NotionTemplate blocks={data} />
 }
 ```
+
+## Supporting Blocks
+| Block Type       | Supported |
+|------------------|-----------|
+| Bookmark         | ✅         |
+| Breadcrumb       | ❌         |
+| BulletedListItem | ✅         |
+| Callout          | ✅         |
+| ChildDatabase    | ❌         |
+| ChildPage        | ❌         |
+| Column           | ✅         |
+| ColumnList       | ✅         |
+| Divider          | ✅         |
+| Embed            | ❌         |
+| Equation         | ✅         |
+| File             | ✅         |
+| Heading_1        | ✅         |
+| Heading_2        | ✅         |
+| Heading_3        | ✅         |
+| Image            | ✅         |
+| LinkPreview      | ❌         |
+| LinkToPage       | ❌         |
+| NumberedListItem | ✅         |
+| Paragraph        | ✅         |
+| Pdf              | ❌         |
+| Quote            | ✅         |
+| SyncedBlock      | ❌         |
+| Table            | ✅         |
+| TableOfContents  | ❌         |
+| TableRow         | ✅         |
+| Template         | ❌         |
+| ToDo             | ✅         |
+| Toggle           | ✅         |
+| Video            | ✅         |
