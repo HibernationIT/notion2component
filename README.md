@@ -19,9 +19,10 @@ npm install @hibernationit/notion2component
 The getPage function of the notion2component module **cannot be called from the browser**.
 Therefore, you must use a **server side rendering (SSR)** environment or implement a server that calls data.
 We recommend using nextjs rather than reactjs.
+However, because the Notion Template component is a client side rendering (CSR), you must create a CSR component when using nextjs.
 
 ## Usage
-[Create a client object using the document @notionhq/client](https://github.com/makenotion/notion-sdk-js/blob/main/README.md#usage) and create an n2c object using that object.
+[Create a client object by referencing the @notionhq/client document](https://github.com/makenotion/notion-sdk-js/blob/main/README.md#usage) and create an n2c object using that object.
 
 ```js
 import { Notion2Component } from '@hibernationit/notion2component' 
@@ -41,3 +42,55 @@ Use the NotionTemplate component to render blocks on the screen.
 <NotionTemplate blocks={blocks} />
 ```
 
+### ReactJS Example
+```jsx
+import { useState, useEffect } from "react";
+import NotionTemplate from '@hibernationit/notion2component/dist/NotionTemplate'
+
+export default function Page() {
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    fetch('your N2C getPage data server')
+      .then((res) => setData(res.json()))
+  }, []);
+  
+  return <NotionTemplate blocks={data} />
+}
+```
+
+### NextJS Example
+
+```jsx
+// page.jsx
+import { Client } from "@notionhq/client";
+import NotionTemplate from '@hibernationit/notion2component/dist/NotionTemplate'
+import { Notion2Component } from "./notion2Component";
+
+async function getData() {
+  const notion = new Client({
+    auth: process.env.NOTION_SECRET,
+  })
+  const n2c = new Notion2Component({
+    client: notion,
+  })
+  return n2c.getPage('your notion page id')
+}
+
+export default async function Page() {
+  const data = await getData()
+  
+  return <CsrComponent data={data} />
+}
+```
+
+```jsx
+// csrComponent.jsx
+'use client'
+
+import NotionTemplate from '@hibernationit/notion2component/dist/NotionTemplate'
+
+export default function CsrComponent({data}) {
+  return <NotionTemplate blocks={data} />
+}
+```
