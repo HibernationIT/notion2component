@@ -1,6 +1,6 @@
 import { Client } from '@notionhq/client'
 import parse from 'node-html-parser'
-import { Block } from './BlockType'
+import { NotionBlock } from './BlockType'
 
 export class Notion2Component {
   private client
@@ -9,14 +9,14 @@ export class Notion2Component {
     this.client = client
   }
 
-  public async getPage(pageId: string): Promise<Block[]> {
+  public async getPage(pageId: string): Promise<NotionBlock[]> {
     return this.getAll(pageId)
   }
 
-  private async getAll(block: string): Promise<Block[]> {
-    const children: Block[] = await this.getChildren(block)
+  private async getAll(block: string): Promise<NotionBlock[]> {
+    const children: NotionBlock[] = await this.getChildren(block)
     return Promise.all(
-      children.map(async (child: Block) => {
+      children.map(async (child: NotionBlock) => {
         if (child.type === 'bookmark') {
           const { title, description, image, icon } =
             await this.getBookmarkInfo(child.bookmark.url)
@@ -35,7 +35,7 @@ export class Notion2Component {
     )
   }
 
-  private async getChildren(block: string): Promise<Block[]> {
+  private async getChildren(block: string): Promise<NotionBlock[]> {
     let more = true
     let cursor = block
     let results: any[] = []
@@ -51,7 +51,7 @@ export class Notion2Component {
       results = results.concat(children.results)
     }
 
-    return results.map((value) => value as Block)
+    return results.map((value) => value as NotionBlock)
   }
 
   private async getBookmarkInfo(url: string) {

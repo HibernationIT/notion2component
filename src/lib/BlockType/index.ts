@@ -38,7 +38,7 @@ export interface Emoji {
   emoji: string
 }
 
-export type Block =
+export type NotionBlock =
   | Bookmark
   | BulletedListItem
   | Callout
@@ -74,7 +74,7 @@ export interface DefaultBlock {
   last_edited_by: object
   has_children: boolean
   archived: boolean
-  children?: Block[]
+  children?: NotionBlock[]
 }
 
 export interface Bookmark extends DefaultBlock {

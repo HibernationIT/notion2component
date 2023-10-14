@@ -1,5 +1,5 @@
 import {
-  Block,
+  NotionBlock,
   Bookmark,
   BulletedListItem,
   Callout,
@@ -41,7 +41,7 @@ import VideoBlock from '../Video/videoBlock'
 import { Container } from './styled'
 
 interface IProps {
-  block: Block
+  block: NotionBlock
   numbered?: number
 }
 
